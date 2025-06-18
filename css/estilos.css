@@ -9,13 +9,13 @@
 body {
     font-family: "Nunito", sans-serif;  
     background-color: #F4F4F4;
-  color: #333;
-  text-align: center;
-  margin: 0;
-  box-sizing: border-box;
-  animation: movimiento 6s;
-  animation-delay: 3s;
-  animation-fill-mode: backwards;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    animation: movimiento 6s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
 }
 
 h1, h2 { 
@@ -31,6 +31,10 @@ h1 {
 
 h2{
     color:#79A0AA;
+}
+
+h3 {
+    font-weight: 600;
 }
 
 header { background-color: white;}
