@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+@font-face {
+    src: url('../fuente/MontserratAlternates-Regular.ttf');
+    font-family: miFuente;
+    font-weight: 700;
+}
+
+body {
+    font-family: "Nunito", sans-serif;  
+    background-color: #F4F4F4;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  animation: movimiento 6s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+h1, h2 { 
+    font-family: miFuente;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 40px;
+    animation: aparecer 3s steps(3);
+    font-style: italic;
+}
+
+h2{
+    color:#79A0AA;
+}
+
+header { background-color: white;}
+
+@keyframes movimiento{
+    from {background-color: #D6ECF2;}
+    to {background-color: #F4F4F4;}
+}
+
+@keyframes aparecer {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+
+header, nav, main, footer, section { 
+    width: 100%; 
+    padding: 10px;
+}
+
+nav { background-color: #D6ECF2; }
+
+nav a { 
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+nav a:hover{
+    color: #244851;
+}
+
+main p{
+    max-width: 50%;
+    margin: auto;
+}
+
+#portfolio div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s linear;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+.servicios {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+}
+
+#servicios{
+    margin-top: 30px;
+}
+
+.servicio {
+    max-width: 400px;
+    background-color: white;
+    border: 1px solid #dddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 1s linear;
+}
+
+.servicio:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#contacto nav{
+    background-color: #F4F4F4;
+}
+
+a{
+    text-decoration: none;
+    color: #79A0AA;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #244851;
+}
+
+footer {
+    background-color:#79A0AA;;
+    color: #D6ECF2;
+    font-size: 15px;
+}
+
+@media (max-width: 768px){
+h1 { font-size: 30px;}
+.servicios {
+    flex-direction: column;
+}
+#portfolio div{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
